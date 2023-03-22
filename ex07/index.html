@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exemplo de imagens</title>
+</head>
+<body>
+    <h1>vemos aqui uma imagem que se mecher na tela ela meche junto</h1>
+    <picture>
+        <source media="(max-width: 750px )" srcset="pequena.jpg" type="image/jpg">
+        <source media="(max-width: 1050px )" srcset="media.jpg" type="image/jpg">
+        <img src="grande.jpg" alt="imagem flexível">
+    </picture>
+    <h1>reproduzindo áudio</h1>
+    <p>vamos aprender a reproduzir áudios em html5</p>
+    <audio preload="metadata" autoplay controls loop>
+        <source src="yt5s.io - 🤷 Vlog No Copyright Chill Modern Pop Free Background Music for YouTube Video _ Everyday by Eric Lund (128 kbps).mp3" type="audio/mpeg">
+        <source src="yt5s.io - 🤷 Vlog No Copyright Chill Modern Pop Free Background Music for YouTube Video _ Everyday by Eric Lund (128 kbps).mp3" type="audio/ogg">
+        <source src="yt5s.io - 🤷 Vlog No Copyright Chill Modern Pop Free Background Music for YouTube Video _ Everyday by Eric Lund (128 kbps).mp3" type="audio/wav">
+        <p>infelizmente seu navegador não consegue reproduzir áudio <a href="yt5s.io - 🤷 Vlog No Copyright Chill Modern Pop Free Background Music for YouTube Video _ Everyday by Eric Lund (128 kbps).mp3">clique aqui para baixar</a> </p>
+    </audio>
+    <!--MP3 WAV OGG-->
+    <!--Para colocar outros formatos deve digitar no google conversor e colocar o vídeo em m4v, webm, ogv para ter maior compatibilidade entre os navegadores, deve ter salvo todos estes arquivos no documento html
+    tem como colocar ali em baixo na frente de vídeo o poster-->
+    <h1>inserindo video hospedado localmente</h1>
+    <p>este vídeo está hospedado no meu próprio servidor</p>
+    <video width="560" controls autoplay loop>
+        <source src="323884818_1649803792149075_2834361687414231551_n.mp4" type="video/mp4">
+        <source src="323884818_1649803792149075_2834361687414231551_n.mp4" type="video/m4v">
+        <source src="323884818_1649803792149075_2834361687414231551_n.mp4" type="video/webm">
+        <source src="323884818_1649803792149075_2834361687414231551_n.mp4" type="video/ogg">
+        <p>Seu navegador não tem compatibilidade com reprodução de vídeos. </p>
+    </video>
+    <h1>inserindo vídeos do yt</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/mdAtDfFPF4o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</body>
+</html>
